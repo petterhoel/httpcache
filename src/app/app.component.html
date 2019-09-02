@@ -5,6 +5,11 @@
 
 <button (click)="toggle401()">{{ four.is401 ? 'Un401 me': '401 me'}}</button>
 
-<button>Get data</button>
+<button (click)="getData()">Get data</button>
 <button (click)="all401()">4realz</button>
 <button (click)="reset()">Reset</button>
+<ul>
+  <li *ngFor="let employee of employees">
+    {{ employee.employee_name}}
+  </li>
+</ul>
